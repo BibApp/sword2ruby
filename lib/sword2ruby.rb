@@ -1,5 +1,1 @@
-require 'tempfile'
-require 'digest'
 require 'sword2_client.rb'
-require 'rexml'
-require 'net/http'
