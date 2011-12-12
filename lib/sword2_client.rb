@@ -26,7 +26,9 @@
 
 # define a sword exception
 class SwordException < Exception; end
-
+class SwordDepositReceiptParseException < Exception
+  attr_accessor :source_xml
+end
 
 # sword client class
 # create one of these to interact with a repository via sword

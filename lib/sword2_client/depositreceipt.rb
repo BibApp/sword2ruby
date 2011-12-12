@@ -1,9 +1,6 @@
 # class for parsing a deposit receipt
 
 require 'atom'
-class Sword2Client::DepositReceipt::ParseException < Exception
-  attr_accessor :source_xml
-end
 
 class Sword2Client::DepositReceipt
 
@@ -33,8 +30,8 @@ class Sword2Client::DepositReceipt
     # assume string
     begin
       @receipt = Atom::Entry.load_entry(@source)
-    rescue Exception=>e
-      exception = Sword2Client::DepositReceipt::ParseException.new
+    rescue Exception => e
+      exception = SwordDepositReceiptParseException.new
       exception.source_xml = @source
       raise exception
     end if @receipt.nil?
