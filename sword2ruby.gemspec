@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = "sword2ruby"
-  s.version = "0.0.1"
+  s.version = "0.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Tim Donahue", "Mark MacGillivray", "Howard Ding"]
@@ -36,6 +36,7 @@ Gem::Specification.new do |s|
     "lib/sword2_client/repository.rb",
     "lib/sword2_client/servicedocparser.rb",
     "lib/sword2ruby.rb",
+    "sword2ruby.gemspec",
     "test/fixtures/entry.xml",
     "test/fixtures/example.zip",
     "test/fixtures/multipart.dat",
