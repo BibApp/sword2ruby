@@ -1,3 +1,3 @@
 # Include hook code here
 
-require 'sword2_client'
+require 'sword2ruby'
