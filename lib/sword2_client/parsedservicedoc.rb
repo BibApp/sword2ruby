@@ -6,7 +6,7 @@
 class Sword2Client::ParsedServiceDoc
 
   # SWORD version & other top level properties specified in Service Doc
-  attr_accessor :version, :verbose, :max_upload_size, :collections, :repository_name
+  attr_accessor :version, :verbose, :max_upload_size, :collections, :repository_name, :no_op
 
   #Array of collections found in Service Doc
   # Each Parsedcollection is represented by a Hash
